@@ -23,8 +23,8 @@ public class QueueLink<E> implements Queue<E> {
   public E remove() throws ExceptionIsEmpty {
     if (isEmpty())
       throw new ExceptionIsEmpty("La cola esta vacia...");
-    E item = this.root;
-    this.root = item.getNext(); 
+    E item = this.root.getData();
+    this.root = this.root.getNext(); 
     return item;
   }
 
@@ -35,8 +35,8 @@ public class QueueLink<E> implements Queue<E> {
   public E element() throws ExceptionIsEmpty { 
     if (isEmpty())
       throw new ExceptionIsEmpty("La cola esta vacia...");
-    E item = this.root;
-    return E item;
+    E item = this.root.getData();
+    return  item;
   }
 
   public E peek() {
@@ -49,8 +49,9 @@ public class QueueLink<E> implements Queue<E> {
 
   public String toString() {
     String str= "";
-    for (Node<E> aux = this.first; aux != null; aux = aux.getNext()){
+    for (Node<E> aux = this.root; aux != null; aux = aux.getNext()){
       str += aux.getData() + ", ";
     }
+    return str;
   }
 }
