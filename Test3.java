@@ -3,6 +3,7 @@ public class Test3 {
  
     System.out.println("Números:");
     Queue<Integer> Q = new QueueLink<Integer>();
+    Queue<Integer> L = new QueueLink<Integer>();
     try {
       Q.add(10);
       System.out.println(Q);
@@ -15,8 +16,9 @@ public class Test3 {
       Q.add(25);
       System.out.println(Q);
       System.out.println("Eliminado: " + Q.remove());
-      System.out.println("Se elimina el elemento: " + Q.remove());
-    } catch(ExceptionIsEmpty x	){
+      System.out.println("Se elimina el elemento: " + Q.element() + "\n" + Q);
+      System.out.println("Elemento de L: " + L.element());
+    } catch(ExceptionIsEmpty x	){ 
       System.out.println(x.getMessage());
 
     }
