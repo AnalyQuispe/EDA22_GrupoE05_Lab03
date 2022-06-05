@@ -143,7 +143,7 @@
 		<li>Desfavorable
 		    <ul>
 			<li> En casos que requieran demasiado uso de memoria debido a su escaso limite de memoria.</li>
-			<li>Para ir hacia "atras" o "siguiente" en los botones de navegacion.</li>
+			<li>Quere acceder a un elemento se tiene que remover todo hasta llegar a el y volver a colocar .</li>
 		    </ul>
 		</li> 
           </ul>
@@ -154,17 +154,17 @@
 		    <ul>
 			<li> Cuando un recurso se comparte entre diferentes usuarios, 
 				por ejemplo imprimir en una sola impresora.</li>
-			<li>Para ir hacia "atras" o "siguiente" en los botones de navegacion.</li>
+			<li>En el orden de proceso de operaciones de una CPU.</li>
 		    </ul>
 		</li>
 		<li>Desfavorable
 		    <ul>
 			<li>Querer quitar elementos que se encuentren en la mitad puede llegar a ser un proceso que requiera mucho tiempo.</li>
+			<li>La búsqueda de algún elemento en específico puede ser una tarea ineficiente.</li>
 		    </ul>
 		</li> 
           </ul>
 	</li>
-           
         </li>
          </ul>
         </td></tr>
