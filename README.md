@@ -74,7 +74,7 @@ ls<div align="center">
           <ul>
           <li>II. Pilas (6 puntos)
           <ul>
-	     <li><img src="img/isEmpty.png?raw=true" alt="image_1" style witdh="150"; height="150"/></li>
+	     <li><img src="img/isEmpty.png?raw=true" alt="image_1" style witdh="150"; height="50"/></li>
 	      </ul>
            <li>En este metodo lo unico que sea hace es comparar la raiz, ya que si esta se encuentra vacia nos indica que no hay ningun elemento en la pila.</li>
              <ul>
