@@ -168,8 +168,10 @@
         </li>
          </ul>
         </td></tr>
-        <tr><td colspan="6">III. CONCLUSIONES
-           <li>conclusion </li>
+        <tr><td colspan="6">III. CONCLUSION
+           <li>Tanto las pilas como las colas son colecciones de elementos organizados pero con diferentes 
+principios de ejecucion que son importantes en estructuras de datos y que pueden ser utilizados de manera eficiente
+ en diferentes condiciones. </li>
 </td></tr>
  </tbody>
 </table>
