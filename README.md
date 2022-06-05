@@ -66,7 +66,7 @@
           <ul>
           <li><strong>I. Pilas iguales (6 puntos)</strong>
              <ul>
-	     <li><img src="img/invertido.jpg?raw=true" alt="image_1" style witdh="150"; height="150"/></li>
+	     <li>Ver <a href="PilasIguales.java">PilasIguales</a>: la solución consiste en apilar alturas a medida que se itera sobre el vector de números</li>
  	     <li>-----.</li>
 	    </ul>
            </li>
