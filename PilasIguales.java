@@ -1,11 +1,23 @@
 public class PilasIguales{
 
     public static void main(String[] args) throws ExceptionIsEmpty{
+        
+        //prueba1
         int[] arr1 = {1, 1, 1, 2, 3};
         int[] arr2 = {2, 3, 4};
         int[] arr3 = {1, 4, 1, 1};
 
-        System.out.println(equalStacks(arr1, arr2, arr3));
+        System.out.println(equalStacks(arr1, arr2, arr3)); //devuelve 5
+        
+        /*
+        //prueba2
+        int[] arr1 = {1, 2, 1, 1};
+        int[] arr2 = {1, 1, 2};
+        int[] arr3 = {1, 1};
+
+        System.out.println(equalStacks(arr1, arr2, arr3)); //devuelve 1 -> cumple la condicion del ejercicio
+        */
+
     }
 
     public static int equalStacks(int[] arr1, int[] arr2, int[] arr3) throws ExceptionIsEmpty{
