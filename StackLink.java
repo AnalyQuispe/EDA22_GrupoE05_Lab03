@@ -1,4 +1,4 @@
-public class StackLink <E> implements stack <E>{
+public class StackLink <E> implements Stack <E>{
 	private Node<E> tope;
 	
 	public StackLink() {
