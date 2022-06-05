@@ -90,7 +90,7 @@ ls<div align="center">
 	      </ul>
            <li>En este metodo, recorremos la pila para llegar al ultimo elemento al cual le añadimos la referencia del nuevo nodo(que contiene el nuevo dato a ingresar).</li>
            <ul>
-	     <li><img src="img/search.png?raw=true" alt="image_1" style witdh="150"; height="250"/></li>
+	     <li><img src="img/search.png?raw=true" alt="image_1" style witdh="150"; height="350"/></li>
 	      </ul>
            <li>En este metodo search, se recorre la pila buscando el elemento deseado devolviendo su posicion y en caso este elemento no se encuentre devuelve -1.</li>
            <ul>
