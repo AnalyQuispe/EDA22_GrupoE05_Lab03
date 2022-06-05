@@ -64,7 +64,7 @@
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
           <ul>
-          <li>I. Pilas iguales (6 puntos)
+          <li><strong>I. Pilas iguales (6 puntos)</strong>
              <ul>
 	     <li><img src="img/invertido.jpg?raw=true" alt="image_1" style witdh="150"; height="150"/></li>
  	     <li>-----.</li>
@@ -72,7 +72,7 @@
            </li>
           </ul>
           <ul>
-          <li>II. Pilas (6 puntos)
+          <li><strong>II. Pilas (6 puntos)</strong>
           <ul>
 	     <li><img src="img/isEmpty.png?raw=true" alt="image_1" style witdh="150"; height="100"/></li>
 	      </ul>
@@ -99,11 +99,25 @@
            <li>Lo único que hace este elemento es imprimir la pila.</li>
           </ul>
           <ul>
-          <li>III. Colas (6 puntos)
+		  <li><strong>III. Colas (6 puntos)</strong>
              <ul>
-	            <li><img src="img/Triangulo_recursivo.png?raw=true" alt="image_1" style witdh="150"; height="150"/></li>
-                <li>
+	            <li><img src="img/Interface.png" alt="image_1" style witdh="150"; height="150"/></li>
+		  </ul>
+	     <li> Se coloca un interface donde contiene los métodos Queue, donde tres de ellos (add, remove, element) son parecidos a otros tres, solo que estos votan una excepción.</li><ul>
+		  <li><img src = "img/Add.png" alt="image_2" style witdh="150"; height= "180"/></li>
               </ul>
+		  <li>En la imagen se observa como se usa el add, en la cual en la condición if, verifica si esta vacio o no, para colocar en primera el elemento o recorrer la cola y colocar al final el elemento.</li>
+		  <ul>
+			  <li><img src="img/Remove.png" alt="image_1" style witdh="150"; height="150"/></li>
+		  </ul>
+		  <li> Se da el mismo comportamiento del <em>Add()</em> para el remove y el element, no obstante este elimina un nodo, reemplazandolo por el siguiente del siguiente en caso del remove y en el element simplemente arroja el elemento cabecera de la cola.</li> 
+		  <ul>
+			<li><img src="img/Extras.png" alt="image_1" style witdh="150"; height="150"/></li>
+		  </ul>
+		  <li> Los métodos mostrados en la imagen tienen como función, verificar si la cola esta vacio o tiene elementos y el otro imprime lo que contiene la cola; respectivamente. Para verificar todos estos métodos se crea la clase <strong><em>Test3</em></strong> donde se tiene el siguiente resultado.</li>
+		  <ul>
+			  <li><img src="img/Resultado.png" alt="image_1" style witdh="150"; height="150"/></li>
+		  </ul>
            </li>
           </ul>
           </td></tr>   
