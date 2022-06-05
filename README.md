@@ -40,7 +40,7 @@
 <tr><td colspan="4">Integrantes:
         <ul>
             <li><h5>Escobar Atamari, Diego Gabriel</h5></li>
-            <li><h5>Flores Sucapuca, Ervin Eleazar </h5></li>
+            <li><h5>Flores Sucupaca, Ervin Eleazar </h5></li>
             <li><h5>Machicao Quispe, Gabriel Steven</h5></li>
             <li><h5>Moroccoire Pacompia Anthony Marcos</h5></li>
             <li><h5>Quispe Bejar, Garlet Analy</h5></li>
@@ -66,8 +66,10 @@
           <ul>
           <li><strong>I. Pilas iguales (6 puntos)</strong>
              <ul>
-	     <li>Ver <a href="PilasIguales.java">PilasIguales</a>: la solución consiste en apilar alturas a medida que se itera sobre el vector de números</li>
- 	     <li>-----.</li>
+	     	<li>
+			Ver <a href="PilasIguales.java">PilasIguales</a>: La solución consiste en apilar alturas a medida que se itera sobre el vector de números. Por ejemplo:<br>Se tiene el vector <code>int[] a = {1, 1, 2}</code>, entonces en una Pila previamente creada se hará push de:<br><code>1, 1 + 1, 1 + 1 + 2</code><br> con este procedimiento se obtienen las alturas a medida que se avanza en el vector. Una vez obtenido las pilas de alturas de los 3 vectores, se comienza a buscar una altura que este al mismo nivel en las 3 pilas
+		</li>
+ 	     	<li>-----.</li>
 	    </ul>
            </li>
           </ul>
