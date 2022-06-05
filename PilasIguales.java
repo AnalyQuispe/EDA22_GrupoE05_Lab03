@@ -32,5 +32,25 @@ public class PilasIguales{
             alturaPila3 += arr3[i];
             pila3.push(alturaPila3);
         }
+
+        //comienza el balanceo de las pilas
+        while(true){
+            if (pila1.isEmpty() || pila2.isEmpty() || pila3.isEmpty())
+                return 0;
+
+            int alturaActual_pila1 = 0;
+            int alturaActual_pila2 = 0;
+            int alturaActual_pila3 = 0;
+
+            if (alturaActual_pila1 == alturaActual_pila2 && alturaActual_pila2 == alturaActual_pila3)
+                return alturaActual_pila1;
+            
+            if (alturaActual_pila1 >= alturaActual_pila2 && alturaActual_pila1 >= alturaActual_pila3)
+                pila1.pop();
+            else if (alturaActual_pila2 >= alturaActual_pila1 && alturaActual_pila2 >= alturaActual_pila3)
+                pila2.pop();
+            else if (alturaActual_pila3 >= alturaActual_pila2 && alturaActual_pila3 >= alturaActual_pila1)
+                pila3.pop();
+        }
     }
 }
