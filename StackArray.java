@@ -1,4 +1,4 @@
-public class StackArray<E> implements stack<E>{
+public class StackArray<E> implements Stack<E>{
 	private int tope;
 	private E[] array;
 	
