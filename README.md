@@ -127,11 +127,44 @@
               <ul>
                    <li>Ambos trabajan con nodos, los cuales ademas de almacenar un dato tambien almacenan la referencia del siguiente nodo.</li>
  	       </ul>
+ 		<ul>
+                   <li> Ambas son ideales para reforzar reglas de acceso secuencial lo que permite tener el control de quien entra y quien sale.</li>
+ 	       </ul>
           </li>
         <li>¿En que casos seria favorable/desfavorable utilizar Pila/Cola? ( 1 pt)
-            <ul>
-                <li>------</li> 
+	<li>Pilas
+	   <ul>
+                <li>Favorable 
+		    <ul>
+			<li>En realizar la operacion deshacer en los editores de texto.</li>
+			<li>Para ir hacia "atras" o "siguiente" en los botones de navegacion.</li>
+		    </ul>
+		</li>
+		<li>Desfavorable
+		    <ul>
+			<li> En casos que requieran demasiado uso de memoria debido a su escaso limite de memoria.</li>
+			<li>Para ir hacia "atras" o "siguiente" en los botones de navegacion.</li>
+		    </ul>
+		</li> 
           </ul>
+	</li>
+	<li>Colas
+	   <ul>
+               <li>Favorable 
+		    <ul>
+			<li> Cuando un recurso se comparte entre diferentes usuarios, 
+				por ejemplo imprimir en una sola impresora.</li>
+			<li>Para ir hacia "atras" o "siguiente" en los botones de navegacion.</li>
+		    </ul>
+		</li>
+		<li>Desfavorable
+		    <ul>
+			<li>Querer quitar elementos que se encuentren en la mitad puede llegar a ser un proceso que requiera mucho tiempo.</li>
+		    </ul>
+		</li> 
+          </ul>
+	</li>
+           
         </li>
          </ul>
         </td></tr>
