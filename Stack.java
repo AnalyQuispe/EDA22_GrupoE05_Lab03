@@ -1,14 +1,14 @@
 package Lab_03;
 
-public class Stack<T extends Comparable<T>> {
+public class Stack<T extends Comparable<T>> implements StackInterface<T> {
 	
 	private Node<T> root;
 	
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return this.root==null;
 	}
 	
-	T peek() throws ExceptionIsEmpty{//Mira el objeto superior de la pila sin sacarlo
+	public T peek() throws ExceptionIsEmpty{//Mira el objeto superior de la pila sin sacarlo
 		Node<T> aux = this.root;
 		while(aux.getNextNode() != null)
 			aux = aux.getNextNode();
@@ -16,14 +16,16 @@ public class Stack<T extends Comparable<T>> {
 		return aux.getDato();
 	}
 	
-	T pop() throws ExceptionIsEmpty{//Devuelve y elimina el objeto superior de la pila
+	public T pop() throws ExceptionIsEmpty{//Devuelve y elimina el objeto superior de la pila
 		Node<T> aux = this.root;
-		while(aux.getNextNode() != null) 
+		while(aux.getNextNode().getNextNode() != null) 
 			aux = aux.getNextNode();
-		return null;
+		T var = aux.getNextNode().getDato();
+		aux.setNextNode(null);
+		return var;
 	}
 	
-	T push(T item) {
+	public T push(T item) {
 		if(this.isEmpty()) {
 			this.root=new Node<T>(item);
 		}
@@ -39,12 +41,15 @@ public class Stack<T extends Comparable<T>> {
 		
 	}
 	
-	int search(T element) {
+	public int search(T element) {
 		Node<T> aux = this.root;
 		int pos=1;
+		boolean b= false;
 		do {
-			if (aux.getDato().compareTo(element)==0)
+			if (aux.getDato().compareTo(element)==0) {
+				b = true;
 				return pos;
+			}
 			else {
 				aux=aux.getNextNode();
 				pos++;
@@ -52,8 +57,21 @@ public class Stack<T extends Comparable<T>> {
 		}
 		while (aux.getNextNode() != null);
 			
+		if(b)
+			return pos;
+		else
+			return -1;
+	}
+	
+	public String toString() {
+		String str = "";
+		Node<T> aux = this.root;
+		while (aux.getNextNode() != null) {
+			str += aux.getDato()+",";
+			aux = aux.getNextNode();
+		}
 		
-		return (Integer) null;
+		return str+=aux.getDato();
 	}
 
 }
