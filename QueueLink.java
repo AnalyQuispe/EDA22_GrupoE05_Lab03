@@ -5,7 +5,17 @@ public class QueueLink<E> implements Queue<E> {
     this.root = null;
   }
  
-  public boolean add(E x) {
+  public boolean add throws ExceptionIsEmpty (E x) {
+    if(isEmpty())
+      this.root = new Node<E>(x,this.root);
+    else {
+      Node<E> aux = this.root;
+      for(; aux.getNext() != null; aux = aux.getNext());
+      aux.setNext(new Node<E>(x));
+    }
+    return true;
+  }
+  public boolean offer(E x) {
     if(isEmpty())
       this.root = new Node<E>(x,this.root);
     else{
@@ -16,10 +26,6 @@ public class QueueLink<E> implements Queue<E> {
     return true;
   }
 
-  public boolean offer(E x) {
-    return false;
-  }
-
   public E remove() throws ExceptionIsEmpty {
     if (isEmpty())
       throw new ExceptionIsEmpty("La cola esta vacia...");
@@ -28,8 +34,12 @@ public class QueueLink<E> implements Queue<E> {
     return item;
   }
 
-  public E poll() throws ExceptionIsEmpty {
-    return null;
+  public E poll() {
+    if (isEmpty())
+      return null;
+    E item = this.root.getData();
+    this.root = this.root.getNext(); 
+    return item;
   }
 
   public E element() throws ExceptionIsEmpty { 
@@ -40,9 +50,11 @@ public class QueueLink<E> implements Queue<E> {
   }
 
   public E peek() {
-    return null;
+    if (isEmpty())
+      return null;
+    E item = this.root.getData();
+    return item;
   }
-  
   public boolean isEmpty() {
     return this.root == null;
   }
