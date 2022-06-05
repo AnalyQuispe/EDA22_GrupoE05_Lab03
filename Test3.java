@@ -11,13 +11,14 @@ public class Test3 {
       System.out.println(Q);
       Q.add(7);
       System.out.println(Q);
-      Q.add(19);
+      Q.offer(19);
       System.out.println(Q);											
-      Q.add(25);
+      Q.offer(25);
       System.out.println(Q);
-      System.out.println("Eliminado: " + Q.remove());
-      System.out.println("Se elimina el elemento: " + Q.element() + "\n" + Q);
-      System.out.println("Elemento de L: " + L.element());
+      System.out.println("Eliminado por el método remove: " + Q.remove());
+      System.out.println("Se elimina con poll: " + Q.poll() + "\nElementos que quedan: " + Q);
+      System.out.println("Elemento de Q: " + Q.element());
+      System.out.println("Elemento de L: " + L.peek());
     } catch(ExceptionIsEmpty x	){ 
       System.out.println(x.getMessage());
 

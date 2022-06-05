@@ -5,7 +5,7 @@ public class QueueLink<E> implements Queue<E> {
     this.root = null;
   }
  
-  public boolean add throws ExceptionIsEmpty (E x) {
+  public boolean add (E x) throws ExceptionIsEmpty{
     if(isEmpty())
       this.root = new Node<E>(x,this.root);
     else {
