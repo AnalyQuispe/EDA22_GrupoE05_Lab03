@@ -1,7 +1,7 @@
 public class Test {
 	public static void main(String []args) {
 		
-		stack<Integer> lint=new StackArray<Integer>(6);
+		Stack<Integer> lint=new StackArray<Integer>(6);
 		try {
 		lint.push(10);
 		System.out.println(lint);
@@ -30,19 +30,19 @@ public class Test {
 		/*stack<Integer> lint=new StackLink<Integer>();
 		try {
 		lint.push(10);
-		System.out.println("Tope: "+lint.top());
+		System.out.println("Tope: "+lint.peek());
 		lint.push(14);
-		System.out.println("Tope: "+lint.top());
+		System.out.println("Tope: "+lint.peek());
 		lint.push(7);
-		System.out.println("Tope: "+lint.top());
+		System.out.println("Tope: "+lint.peek());
 		lint.push(23);
-		System.out.println("Tope: "+lint.top());
+		System.out.println("Tope: "+lint.peek());
 		lint.push(16);
-		System.out.println("Tope: "+lint.top());
+		System.out.println("Tope: "+lint.peek());
 		lint.push(9);
-		System.out.println("Tope: "+lint.top());
+		System.out.println("Tope: "+lint.peek());
 		lint.push(230);
-		System.out.println("Tope: "+lint.top());
+		System.out.println("Tope: "+lint.peek());
 		
 		
 		
