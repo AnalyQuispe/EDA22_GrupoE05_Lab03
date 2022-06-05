@@ -14,7 +14,7 @@ public class StackArray<E> implements stack<E>{
 			System.out.println("stack esta lleno...");
 	}
 	
-	public E top() throws ExceptionIsEmpty{
+	public E peek() throws ExceptionIsEmpty{
 		if(isEmpty())
 			throw new ExceptionIsEmpty("Stack esta vacio...");
 		E item=this.array[this.tope];
