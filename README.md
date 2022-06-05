@@ -67,7 +67,7 @@
           <li><strong>I. Pilas iguales (6 puntos)</strong>
              <ul>
 	     	<li>
-			Ver <a href="PilasIguales.java">PilasIguales</a>: La solución consiste en apilar alturas a medida que se itera sobre el vector de números. Por ejemplo:<br>Se tiene el vector <code>int[] a = {1, 1, 2}</code>, entonces en una Pila previamente creada se hará push de:<br><code>1, 1 + 1, 1 + 1 + 2</code><br> con este procedimiento se obtienen las alturas a medida que se avanza en el vector. Una vez obtenido las pilas de alturas de los 3 vectores, se comienza a buscar una altura que este al mismo nivel en las 3 pilas
+			Ver <a href="PilasIguales.java">PilasIguales</a>: La solución consiste en apilar alturas a medida que se itera sobre el vector de números. Por ejemplo:<br>Se tiene el vector <code>int[] a = {1, 1, 2}</code>, entonces en una Pila previamente creada se hará push de:<br><code>1, 1 + 1, 1 + 1 + 2</code> con este procedimiento se obtienen las alturas a medida que se avanza en el vector.<br>Una vez obtenido las pilas de alturas de los 3 vectores, se comienza a buscar una altura que este al mismo nivel en las 3 pilas; si es encotrado el programa acaba, de lo contrario se usa la función <code>pop()</code> en la pila que tenga mas altura y vuelve a comprobarse que la condicion inicia. Si no se encontró una altura conincidente, al final una de als pilas tendra 0 elementos y acaba el programa retornando 0.
 		</li>
  	     	<li>-----.</li>
 	    </ul>
