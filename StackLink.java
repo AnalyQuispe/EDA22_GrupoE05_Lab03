@@ -1,4 +1,4 @@
-public class StackLink <E> implements Stack <E>{
+public class StackLink <E> implements Stack2 <E>{
 	private Node<E> tope;
 	
 	public StackLink() {
@@ -10,7 +10,7 @@ public class StackLink <E> implements Stack <E>{
 	}
 	
 	public E peek() throws ExceptionIsEmpty{
-	if(isEmpty())
+		if(isEmpty())
 			throw new ExceptionIsEmpty("Stack esta vacio...");
 		E item=this.tope.getData();
 		return item;
