@@ -1,5 +1,3 @@
-package Lab_03;
-
 public class Stack<T extends Comparable<T>> implements StackInterface<T> {
 	
 	private Node<T> root;
