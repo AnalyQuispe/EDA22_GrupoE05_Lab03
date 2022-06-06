@@ -1,7 +1,7 @@
 public class Test {
 	public static void main(String []args) {
 		
-		Stack<Integer> lint=new StackArray<Integer>(6);
+		Stack2<Integer> lint=new StackArray<Integer>(6);
 		try {
 		lint.push(10);
 		System.out.println(lint);
@@ -27,7 +27,7 @@ public class Test {
 			System.out.println(x.getMessage());
 		}
 		
-		/*stack<Integer> lint=new StackLink<Integer>();
+		/*Stack2<Integer> lint=new StackLink<Integer>();
 		try {
 		lint.push(10);
 		System.out.println("Tope: "+lint.peek());
