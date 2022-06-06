@@ -1,13 +1,13 @@
-public class Node<E> {
+public class NodeCola<E> {
   private E data;
-  private Node<E> next;
+  private NodeCola<E> next;
 
-  public Node(E data, Node<E> next) {
+  public NodeCola(E data, NodeCola<E> next) {
     this.data = data;
     this.next = next;
   }
 
-  public Node (E data){
+  public NodeCola (E data){
     this(data, null);
   }
   public E getData() {
@@ -16,10 +16,10 @@ public class Node<E> {
   public void setData(E data) {
     this.data = data;
   }
-  public Node<E> getNext() {
+  public NodeCola<E> getNext() {
     return this.next;
   }
-  public void setNext(Node<E> next) {
+  public void setNext(NodeCola<E> next) {
     this.next = next;
   }
   public String toString() {
