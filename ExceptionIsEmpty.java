@@ -1,5 +1,3 @@
-package Lab_03;
-
 public class ExceptionIsEmpty extends Exception {
 
 	public ExceptionIsEmpty() {
@@ -9,5 +7,4 @@ public class ExceptionIsEmpty extends Exception {
 	public ExceptionIsEmpty(String msg) {
 		super(msg);
 	}
-
 }
