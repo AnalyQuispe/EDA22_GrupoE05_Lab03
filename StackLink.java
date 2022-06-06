@@ -1,12 +1,12 @@
 public class StackLink <E> implements Stack2 <E>{
-	private Node<E> tope;
+	private Nodo<E> tope;
 	
 	public StackLink() {
 		this.tope=null;
 	}
 	
 	public void push(E x) {
-		this.tope=new Node<E>(x,this.tope);
+		this.tope=new Nodo<E>(x,this.tope);
 	}
 	
 	public E peek() throws ExceptionIsEmpty{
