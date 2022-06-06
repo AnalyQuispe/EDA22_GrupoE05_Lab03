@@ -63,6 +63,7 @@
     </theader>
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
+	  <p>Las clases <a href="Nodo.java">Nodo.java</a> <a href="Stack2.java">Stack2.java</a> <a href="StackArray.java">StackArray.java</a> son otra implementacion de una pila para probarlo ejecute <a href="Test.java">Test.java</a></p>
           <ul>
           <li><strong>I. Pilas iguales (6 puntos)</strong>
              <ul>
