@@ -1,5 +1,3 @@
-package Lab_03;
-
 public class Node<T> {
 	private T dato;
 	private Node<T> nextNode;
