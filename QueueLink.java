@@ -1,5 +1,5 @@
 public class QueueLink<E> implements Queue<E> {
-  private Node<E> root;
+  private NodeCola<E> root;
 
   public QueueLink(){
     this.root = null;
@@ -7,21 +7,21 @@ public class QueueLink<E> implements Queue<E> {
  
   public boolean add (E x) throws ExceptionIsEmpty{
     if(isEmpty())
-      this.root = new Node<E>(x,this.root);
+      this.root = new NodeCola<E>(x,this.root);
     else {
-      Node<E> aux = this.root;
+      NodeCola<E> aux = this.root;
       for(; aux.getNext() != null; aux = aux.getNext());
-      aux.setNext(new Node<E>(x));
+      aux.setNext(new NodeCola<E>(x));
     }
     return true;
   }
   public boolean offer(E x) {
     if(isEmpty())
-      this.root = new Node<E>(x,this.root);
+      this.root = new NodeCola<E>(x,this.root);
     else{
-      Node<E> aux = this.root;
+      NodeCola<E> aux = this.root;
       for(; aux.getNext() != null; aux = aux.getNext());
-      aux.setNext(new Node<E>(x));
+      aux.setNext(new NodeCola<E>(x));
     }
     return true;
   }
